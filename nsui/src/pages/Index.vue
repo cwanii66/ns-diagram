@@ -1,9 +1,9 @@
 <script setup>
+
 </script>
 
 <template>
-  <main>
-    <RouterView />
-    footer
-  </main>
+  <div flex="~">
+    <Home />
+  </div>
 </template>

@@ -1,9 +1,8 @@
 <script setup>
+
 </script>
 
 <template>
-  <main>
-    <RouterView />
-    footer
-  </main>
+  <div class="bg-cyan" w100 h100></div>
 </template>
+

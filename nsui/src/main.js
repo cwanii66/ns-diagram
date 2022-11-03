@@ -1,5 +1,17 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
+import routes from 'virtual:generated-pages'
+import { createRouter, createWebHistory } from 'vue-router'
 
-createApp(App).mount('#app')
+import '@unocss/reset/tailwind.css'
+import './styles/main.css'
+import 'uno.css'
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+})
+const app = createApp(App)
+
+app.use(router)
+app.mount('#app')
